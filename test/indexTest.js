@@ -3,13 +3,13 @@ describe('index.js', () => {
     it('is defined', () => {
       expect(currentUser, "The 'currentUser' variable must contain a string").to.be.a('string');
       expect(currentUser, "You need to modify the value of the 'currentUser' variable").to.not.be.empty;
-    });
+    }); // let currentUser="Amy"
   });
 
   describe('welcomeMessage', () => {
     it('contains "Welcome to Flatbook, "', () => {
       expect(welcomeMessage).to.have.string('Welcome to Flatbook, ');
-    });
+    }); //let welcomeMessage= "Welcome to Flathook, " + ${'currentUser'} + "!"
 
     it("contains the value of the 'currentUser' variable", () => {
       expect(welcomeMessage).to.have.string(currentUser);
